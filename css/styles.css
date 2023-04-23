@@ -1,0 +1,166 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #4d5ae5;
+  --secondary-accent-color: #404bbf;
+  --primery-page-color-dark: #434455;
+  --secondary-page-color-dark: #2e2f42;
+  --text-color-light: #ffffff;
+  --secondary-text-color-light: #f4f4fd;
+  --primary-font-size: 16px;
+  --secondary-font-size: 20px;
+  --primary-line-height: 1.5;
+  --primary-background-color: #ffffff;
+  --secondary-bg-color: #f4f4fd;
+  --accent-background-color: #2e2f42;
+}
+/* скидання дефолтних стилів */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* наслідування стилів */
+body {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  color: var(--primery-page-color-dark);
+  line-height: var(--primary-line-height);
+  background-color: var(--primary-background-color);
+}
+/* компоненти */
+.description-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-page-color-dark);
+}
+.suptitle {
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-page-color-dark);
+}
+.description-item {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: var(--primary-line-height);
+  font-size: var(--primary-font-size);
+  letter-spacing: 0.02em;
+  color: var(--primery-page-color-dark);
+}
+.description-item-theme-dark {
+  color: var(--secondary-text-color-light);
+}
+.logotype {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.logotype-item {
+  color: var(--secondary-page-color-dark);
+}
+
+.logotype-item-theme-dark {
+  color: var(--secondary-text-color-light);
+}
+/* /кінець стилів для компонентів */
+/* шапка */
+.menu-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-page-color-dark);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--secondary-accent-color);
+}
+.address-list {
+  font-style: normal;
+}
+.contact-link {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--primery-page-color-dark);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--secondary-accent-color);
+}
+/* /шапка */
+/* основна секція */
+.hero-section {
+  background-color: var(--accent-background-color);
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-color-light);
+}
+.modal-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--text-color-light);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--secondary-accent-color);
+}
+/* /Кінець основної секції */
+/* Team section */
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
+.team-list-item {
+  background-color: var(--primary-background-color);
+}
+/* Кінець Team section */
+/* футер */
+.footer-section {
+  background-color: var(--accent-background-color);
+}
+/* Сторінка Портфоліо */
+.portfolio-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background: var(--secondary-bg-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--text-color-light);
+  background: var(--secondary-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
