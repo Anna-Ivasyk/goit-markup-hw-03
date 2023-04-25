@@ -15,7 +15,7 @@
   --accent-background-color: #2e2f42;
   --portfolio-btn-bg: #e7e9fc;
 }
-/* скидання дефолтних стилів */
+/* скидання дефолтних стилів та нормалізація стилів */
 h1,
 h2,
 h3,
@@ -68,10 +68,6 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-}
 .description-title {
   margin-bottom: 72px;
   font-weight: 700;
@@ -100,8 +96,6 @@ body {
 }
 .description-item-theme-dark {
   max-width: 264px;
-  margin-top: 16px;
-  margin-right: auto;
   color: var(--secondary-text-color-light);
 }
 .logotype {
@@ -126,6 +120,11 @@ body {
 }
 /* /кінець стилів для компонентів */
 /* шапка */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -264,9 +263,10 @@ body {
 /* футер */
 .footer-section {
   background-color: var(--accent-background-color);
-}
-.footer-container {
   padding: 100px 0;
+}
+.footer-container .logotype {
+  margin-bottom: 16px;
 }
 /* Сторінка Портфоліо */
 .portfolio-section {
