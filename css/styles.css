@@ -124,7 +124,7 @@ body {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-nav {
   display: flex;
@@ -133,7 +133,10 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  gap: 40px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 .menu-link {
   font-weight: 500;
@@ -148,12 +151,14 @@ body {
 }
 .address-list {
   font-style: normal;
+  margin-left: auto;
 }
 .address-menu {
   display: flex;
 }
-.contact-link:first-child {
-  margin-right: 40px;
+
+.address-menu .address-item + .address-item {
+  margin-left: 40px;
 }
 .contact-link {
   font-weight: 400;
@@ -183,7 +188,7 @@ body {
   margin-right: auto;
   text-align: center;
   padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   letter-spacing: 0.02em;
   color: var(--text-color-light);
 }
@@ -194,10 +199,8 @@ body {
   line-height: 1.5;
   display: block;
   min-width: 169px;
-  height: 56px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 188px;
   padding: 16px 32px;
   align-items: center;
   letter-spacing: 0.04em;
